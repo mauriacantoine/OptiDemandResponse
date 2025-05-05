@@ -1,3 +1,3 @@
-import gurobi
+import gurobipy
 
 print ("hello")
