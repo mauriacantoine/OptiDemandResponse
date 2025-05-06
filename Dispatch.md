@@ -22,6 +22,10 @@ On peut diviser le travail en 3 grandes parties: data; model; analysis
 - [ ] Créer pour chaque appliance une fonction qui la caractérise
 - [ ] Créer la objective function
 - [ ] Implémenter les contraintes
+<<<<<<< HEAD
 - [ ] Créer une fonction qui appelle et résolve le problème (pour un petit horizon dans un premier temps)\*\* \n  \n \*\*
+=======
+- [ ] Créer une fonction qui appelle et résolve le problème (pour un petit horizon dans un premier temps)
+>>>>>>> 792baab0008d17a104ade1412347ef1c5e6241fd
 
 
