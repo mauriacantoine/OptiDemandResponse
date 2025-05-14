@@ -34,9 +34,17 @@ Tasks:
 - [ ] Arthur : modéliser peak and base (créer array pour chaque time slot)
 - [ ] Edouard : nettoyer le code pour le faire beau et uniformiser les variables si possible
 
+  # Meeting 14.05
+
+  Tasks:
+  - [ ] Arthur : implémente la Base Peak solution + plot la température au cours de la semaine + check les paramètre de heating + check les prices for PV electricity selling 
+  - [ ] Antoine:  ajouter le power threshold 
+  - [ ] \
+
 # To do in the future
 
 * Rolling horizon
-* Power threshold
+* Add PV scenario:  The PV Energy production is always directly substracted to the total energy demand. If the delta is negative, the extra quantity will be sold to the spot market (need to find the data of the prices)
+* Consider the LCOE of pv for internal consumption.
 
 
