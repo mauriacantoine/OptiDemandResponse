@@ -20,26 +20,26 @@ On peut diviser le travail en 3 grandes parties: data; model; analysis
 
 - [x] Collecter les data et les mettre sur le main github: les données de demande (heating, electrical consumption d’un bureau), de supply( ensoleillement ) et les tarifs ( cf: sources overleaf),interpoler ou mettre à l’échelle si nécessaire,  avec un bloc jupyter spécifique
 - [x] Créer pour chaque appliance une fonction qui la caractérise
-- [ ] Créer la objective function
+- [x] Créer la objective function
 - [x] Implémenter les contraintes
-- [ ] Créer une fonction qui appelle et résolve le problème (pour un petit horizon dans un premier temps)
+- [x] Créer une fonction qui appelle et résolve le problème (pour un petit horizon dans un premier temps)
 
 # Meeting 09.05
 
 Tasks:
 
-- [ ] Antoine : faire opti sur 5 jours
-- [ ] All : créer cost function pour chaque appliance
-- [ ] Antoine : Créer une cost function globale + results
-- [ ] Arthur : modéliser peak and base (créer array pour chaque time slot)
+- [x] Antoine : faire opti sur 5 jours
+- [x] All : créer cost function pour chaque appliance
+- [x] Antoine : Créer une cost function globale + results
+- [x] Arthur : modéliser peak and base (créer array pour chaque time slot)
 - [ ] Edouard : nettoyer le code pour le faire beau et uniformiser les variables si possible
 
   # Meeting 14.05
 
   Tasks:
-  - [ ] Arthur : implémente la Base Peak solution + plot la température au cours de la semaine + check les paramètre de heating + check les prices for PV electricity selling 
-  - [ ] Antoine:  ajouter le power threshold 
-  - [ ] \
+  - [ ] Arthur : implémente la Base Peak solution + plot la température au cours de la semaine + check les paramètre de heating + check les prices for PV electricity selling
+  - [ ] Antoine:  ajouter le power threshold
+  - [ ] all: nettoyer le code et uniformiser les variables 
 
 # To do in the future
 
