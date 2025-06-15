@@ -1,16 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-threshold = range(35)
-
-
-# price_1 = np.zeros(threshold)
-# price_2 = range(25) 
-# price_3 = range(25) 
-# price_4 = range(25)
-
-# for loop to calculate price based on threshold, ruuning the file Project_with_functions.ipynb
-
+threshold = range(35)  # Power threshold from 1 kW to 35 kW
 
 #matrix, called prices, of dimension of 25 x 4
 prices = np.zeros((35, 4))
@@ -51,14 +42,20 @@ prices[32,:] = [2.3517,605.006,32.9783,695.125] # 33 kW
 prices[33,:] = [-0.768382,601.109,32.5725,694.684] # 34 kW
 prices[34,:] = [-3.78913,597.373,32.2155,694.244] # 35 kW
 
-
+#plot
 plt.plot(threshold, prices[:,0], 'r', label='Scenario 1')
 plt.plot(threshold, prices[:,1], 'g', label='Scenario 2')
 plt.plot(threshold, prices[:,2], 'b', label='Scenario 3')
 plt.plot(threshold, prices[:,3], 'y', label='Scenario 4')
+plt.axvline(x=19, color='k', linestyle='--', linewidth=0.5)
+plt.axhline(y=59.825, color='k', linestyle='--', linewidth=0.5)
+plt.axhline(y=679.977, color='k', linestyle='--', linewidth=0.5)
+plt.axhline(y=41.4571, color='k', linestyle='--', linewidth=0.5)
+plt.axhline(y=706.771, color='k', linestyle='--', linewidth=0.5)
 plt.xlabel('Power Threshold [kW]')
-plt.ylabel('Price [CHF/kWh]')
+plt.ylabel('Price [CHF]')
 plt.title('Total cost objective function, depending on the power threshold')
 plt.grid(True)
 plt.legend()
+plt.savefig('plots/Graph_Cost_VS_Threshold.png', dpi=300, bbox_inches='tight')
 plt.show()
